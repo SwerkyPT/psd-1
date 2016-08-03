@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SiteName</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav>
+      <div class="container">
+        <h1 class="logo"><span>Site</span>Name</h1>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#" data-nav="services">Services</a></li>
+          <li><a href="#" data-nav="team">Team</a></li>
+          <li><a href="#" data-nav="gallery">Gallery</a></li>
+          <li><a href="#" data-nav="contact">Contact</a></li>
+          <li class="lang"><a href="#">عربي</a></li>
+        </ul>
+    </div>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <ul class="rslides">
+      <li>
+        <img src="assets/img/slider1.jpg" alt="Slider Image"></li>
+      <li>
+        <img src="assets/img/slider2.jpg" alt="Slider Image"></li>
+      <li>
+        <img src="assets/img/slider3.jpg" alt="Slider Image"></li>
+    </ul>
+    <div class="overlay">
+      <div class="text">
+        <h2 class="text-center">Welcome To Our Website</h2>
+        <button type="button" name="tourBtn">Take A Tour</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section id="services" class="services">
+      <h2 class="subject-title">Services</h2>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officiis!</p>
+      <div class="icons-show">
+
+        <div>
+          <i class="icon-location"></i>
+          <h3>Hosting</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officiis!</p>
+          <button>Read More</button>
+        </div>
+
+        <div>
+          <i class="icon-users"></i>
+          <h3>Hosting</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tenetur.</p>
+          <button>Read More</button>
+        </div>
+
+        <div>
+          <i class="icon-glass2"></i>
+          <h3>Hosting</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tenetur.</p>
+          <button>Read More</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="team" class="team">
+
+        <h2 class="subject-title">Team</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsum iusto, officiis suscipit excepturi impedit et fugiat at vitae nihil placeat!</p>
+
+        <div class="icons-show">
+
+          <div class="person">
+            <i class="icon-user"></i>
+            <h3>Mr.John Doe</h3>
+            <h5>Job Title</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>Read More</button>
+          </div>
+
+          <div class="person">
+            <i class="icon-user"></i>
+            <h3>Mr.John Doe</h3>
+            <h5>Job Title</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>Read More</button>
+          </div>
+
+          <div class="person">
+            <i class="icon-user"></i>
+            <h3>Mr.John Doe</h3>
+            <h5>Job Title</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button>Read More</button>
+          </div>
+
+        </div>
+
+    </section>
+
+    <section id="gallery" class="gallery">
+      <h2 class="subject-title">Gallery</h2>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsum iusto, officiis suscipit excepturi impedit et fugiat at vitae nihil placeat!</p>
+
+      <div class="controls">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter=".category-1">Posters</button>
+        <button class="filter" data-filter=".category-2">Fashion</button>
+        <button class="filter" data-filter=".category-3">Movies</button>
+      </div>
+
+      <div id="Container">
+      	<div class="mix category-1" data-myorder="2">
+      	  <img src="assets/img/sample.png" alt="Categories">
+          <p class="text-center">Lorem ipsum dolor.</p>
+      	</div>
+
+      	<div class="mix category-2" data-myorder="4">
+      	  <img src="assets/img/sample.png" alt="Categories">
+          <p class="text-center">Lorem ipsum dolor.</p>
+      	</div>
+
+      	<div class="mix category-1" data-myorder="1">
+      	  <img src="assets/img/sample.png" alt="Categories">
+          <p class="text-center">Lorem ipsum dolor.</p>
+      	</div>
+
+      	<div class="mix category-2" data-myorder="8">
+      	  <img src="assets/img/sample.png" alt="Categories">
+          <p class="text-center">Lorem ipsum dolor.</p>
+      	</div>
+
+      	<div class="mix category-3" data-myorder="8">
+      	  <img src="assets/img/sample.png" alt="Categories">
+          <p class="text-center">Lorem ipsum dolor.</p>
+      	</div>
+
+      	<div class="mix category-3" data-myorder="8">
+      	  <img src="assets/img/sample.png" alt="Categories">
+          <p class="text-center">Lorem ipsum dolor.</p>
+      	</div>
+      </div>
+    </section>
+
+  </div><!-- .container -->
+
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/responsiveslides.min.js"></script>
+  <script src="assets/js/jquery.mixitup.min.js"></script>
+  <script src="assets/js/functions.js"></script>
+</body>
+</html>
