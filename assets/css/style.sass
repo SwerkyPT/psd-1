@@ -1,0 +1,190 @@
+$pClr  : #f18859
+$sClr  : #4f6c6a
+$white : #fff
+$green : #689F38
+$blue  : #1976D2
+$yellow: #FBC02D
+$brown : #5D4037
+$red   : #d32f2f
+$pink  : #C2185B
+$bodyBG: #ddd
+$txtClr: #444
+$btns  : #71a19b
+
+@import imports/reset.sass
+@import imports/icons.css
+// @import imports/bt-grid.sass
+// Fixes
+.container
+  width: 960px
+  margin: auto
+
+// GLOBALS
+.subject-title
+  @extend .text-center
+  color: $pClr
+  text-transform: uppercase
+
+body
+  padding-top: 80px
+
+button, a.btn
+  border: none
+  background-color: $btns
+  border-bottom: 5px solid rgba(#000, 0.2)
+  transition: all 150ms ease
+  &:hover
+    border-bottom: 0px solid rgba(#000, 0.2)
+    transform: translateY(5px)
+
+
+// NAV
+header.header
+  nav
+    @extend .cfix
+    background-color: $pClr
+    color: $white
+    line-height: 80px
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 999999
+    &.is-floated
+      box-shadow: 0 4px 12px rgba(#000, .15)
+
+
+    .logo
+      display: inline-block
+      float: left
+      span
+        color: $sClr
+
+    ul
+      float: right
+      li
+        margin-right: 15px
+        a
+          font-weight: bold
+          color: $white
+          line-height: 35px
+          padding: 0px 20px
+          border-radius: 3px
+        &.active a
+          background-color: $white
+          color: $pClr
+          box-shadow: 0 2px 4px rgba(#000, 0.05)
+
+// SLIDER
+@import imports/rslider.css
+.rslides
+  max-height: 450px
+  position: relative
+
+.slider
+  position: relative
+
+.overlay
+  content: ""
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background-color: rgba($sClr - 50, .5)
+  @extend .text-center
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 999
+  h2
+    color: $white
+    margin-bottom: 20px
+
+    // font: 0px/0 a
+// PAGER
+.rslides_tabs.rslides1_tabs
+  width: 100%
+  position: absolute
+  bottom: 30px
+  left: 0
+  right: 0
+  text-align: center
+  z-index: 99999
+  li
+    display: inline-block
+    // font: 0px/0 a
+    width: 15px
+    height: 15px
+    border: 2px solid $white
+    margin: 10px
+    border-radius: 50%
+    a
+      color: rgba(#000, 0)
+    &.rslides_here
+      background-color: #fff
+
+
+// SERVICES
+.services, .team, .gallery
+  @extend .row
+  padding: 30px 0
+  overflow: hidden
+
+.icons-show
+  @extend .text-center
+  display: flex
+  justify-content: center
+
+  > div
+    margin-left: 40px
+    margin-right: 40px
+    margin-top: 50px
+    i
+      font-size: 6em
+      color: $sClr
+      border: 5px solid $pClr
+      padding: 30px
+      border-radius: 50%
+      // display: block
+    h3
+      margin-top: 60px
+      color: $pClr
+    h5
+      padding: 0
+    p
+      padding: 20px 0
+
+// TEAM
+.services, .team, .gallery
+  p
+    padding: 20px 0
+    line-height: 1.8em
+
+// GALLERY
+#Container .mix
+	display: none
+
+.gallery
+  min-height: 750px
+  .controls
+    @extend .text-center
+    margin-bottom: 20px
+    button
+      padding: 10px 15px
+      border-radius: 3px
+      border-bottom: none
+      box-shadow: 0 -3px 0 rgba(#000, 0.2) inset
+      &:hover
+        transform: translateY(0)
+      &.active
+        background-color: $pClr
+.mix
+  transition: auto
+  img
+    border: 5px solid $sClr
+  p
+    padding: 0
