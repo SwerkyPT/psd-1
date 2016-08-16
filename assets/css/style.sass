@@ -13,7 +13,6 @@ $btns  : #71a19b
 
 @import imports/reset.sass
 @import imports/icons.css
-// @import imports/bt-grid.sass
 // Fixes
 .container
   width: 960px
@@ -27,14 +26,19 @@ $btns  : #71a19b
 
 body
   padding-top: 80px
+  font-size: 16px
 
-button, a.btn
+h1
+  font-size: 2em
+
+.btn-primary
   border: none
   background-color: $btns
   border-bottom: 5px solid rgba(#000, 0.2)
   transition: all 150ms ease
-  &:hover
+  &:hover, &:focus
     border-bottom: 0px solid rgba(#000, 0.2)
+    background-color: $btns - 30
     transform: translateY(5px)
 
 
@@ -130,12 +134,12 @@ header.header
 
 // SERVICES
 .services, .team, .gallery
-  @extend .row
+  // @extend .row
   padding: 30px 0
   overflow: hidden
 
 .icons-show
-  @extend .text-center
+  text-align: center
   display: flex
   justify-content: center
 
@@ -149,14 +153,13 @@ header.header
       border: 5px solid $pClr
       padding: 30px
       border-radius: 50%
-      // display: block
     h3
       margin-top: 60px
       color: $pClr
     h5
       padding: 0
     p
-      padding: 20px 0
+      padding: 10px 0
 
 // TEAM
 .services, .team, .gallery
@@ -166,20 +169,21 @@ header.header
 
 // GALLERY
 #Container .mix
-	display: none
+  display: none
 
 .gallery
   min-height: 750px
   .controls
-    @extend .text-center
+    text-align: center
     margin-bottom: 20px
-    button
+    .btn-primary
       padding: 10px 15px
       border-radius: 3px
       border-bottom: none
       box-shadow: 0 -3px 0 rgba(#000, 0.2) inset
-      &:hover
+      &:hover, &:focus
         transform: translateY(0)
+        background-color: $sClr
       &.active
         background-color: $pClr
 .mix
@@ -188,3 +192,8 @@ header.header
     border: 5px solid $sClr
   p
     padding: 0
+
+footer.footer
+  background-color: $sClr
+  color: $white
+  line-height: 50px

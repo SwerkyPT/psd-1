@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SiteName</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -36,43 +37,43 @@
     <div class="overlay">
       <div class="text">
         <h2 class="text-center">Welcome To Our Website</h2>
-        <button type="button" name="tourBtn">Take A Tour</button>
+        <button class="btn-primary" type="button" name="tourBtn">Take A Tour</button>
       </div>
     </div>
   </section>
 
   <div class="container">
 
-    <section id="services" class="services">
+    <section id="services" class="services row">
       <h2 class="subject-title">Services</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officiis!</p>
-      <div class="icons-show">
+      <div class="icons-show row">
 
         <div>
           <i class="icon-location"></i>
           <h3>Hosting</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officiis!</p>
-          <button>Read More</button>
+          <button class="btn-primary">Read More</button>
         </div>
 
         <div>
           <i class="icon-users"></i>
           <h3>Hosting</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tenetur.</p>
-          <button>Read More</button>
+          <button class="btn-primary">Read More</button>
         </div>
 
         <div>
           <i class="icon-glass2"></i>
           <h3>Hosting</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tenetur.</p>
-          <button>Read More</button>
+          <button class="btn-primary">Read More</button>
         </div>
 
       </div>
     </section>
 
-    <section id="team" class="team">
+    <section id="team" class="team row">
 
         <h2 class="subject-title">Team</h2>
         <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsum iusto, officiis suscipit excepturi impedit et fugiat at vitae nihil placeat!</p>
@@ -84,7 +85,7 @@
             <h3>Mr.John Doe</h3>
             <h5>Job Title</h5>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button>Read More</button>
+            <button class="btn-primary">Read More</button>
           </div>
 
           <div class="person">
@@ -92,7 +93,7 @@
             <h3>Mr.John Doe</h3>
             <h5>Job Title</h5>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button>Read More</button>
+            <button class="btn-primary">Read More</button>
           </div>
 
           <div class="person">
@@ -100,7 +101,7 @@
             <h3>Mr.John Doe</h3>
             <h5>Job Title</h5>
             <p>Lorem ipsum dolor sit amet.</p>
-            <button>Read More</button>
+            <button class="btn-primary">Read More</button>
           </div>
 
         </div>
@@ -112,10 +113,10 @@
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsum iusto, officiis suscipit excepturi impedit et fugiat at vitae nihil placeat!</p>
 
       <div class="controls">
-        <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter=".category-1">Posters</button>
-        <button class="filter" data-filter=".category-2">Fashion</button>
-        <button class="filter" data-filter=".category-3">Movies</button>
+        <button class="filter btn-primary active" data-filter="all">All</button>
+        <button class="filter btn-primary" data-filter=".category-1">Posters</button>
+        <button class="filter btn-primary" data-filter=".category-2">Fashion</button>
+        <button class="filter btn-primary" data-filter=".category-3">Movies</button>
       </div>
 
       <div id="Container">
@@ -152,6 +153,8 @@
     </section>
 
   </div><!-- .container -->
+
+  <footer class="footer text-center">Copyrights &copy; by Ahmed Mahmoud</footer>
 
   <script src="assets/js/jquery-2.1.4.min.js"></script>
   <script src="assets/js/responsiveslides.min.js"></script>
