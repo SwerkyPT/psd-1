@@ -14,7 +14,7 @@
       <div class="container">
         <h1 class="logo"><span>Site</span>Name</h1>
         <ul>
-          <li class="active"><a href="#">Home</a></li>
+          <li class="active"><a href="#" data-nav="home">Home</a></li>
           <li><a href="#" data-nav="services">Services</a></li>
           <li><a href="#" data-nav="team">Team</a></li>
           <li><a href="#" data-nav="gallery">Gallery</a></li>
@@ -25,7 +25,7 @@
     </nav>
   </header>
 
-  <section class="slider">
+  <section id="home" class="slider">
     <ul class="rslides">
       <li>
         <img src="assets/img/slider1.jpg" alt="Slider Image"></li>
@@ -44,26 +44,26 @@
 
   <div class="container">
 
-    <section id="services" class="services row">
+    <section id="services" class="services">
       <h2 class="subject-title">Services</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officiis!</p>
-      <div class="icons-show row">
+      <div class="icons-show row text-center">
 
-        <div>
+        <div class="col-xs-4">
           <i class="icon-location"></i>
           <h3>Hosting</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, officiis!</p>
           <button class="btn-primary">Read More</button>
         </div>
 
-        <div>
+        <div class="col-xs-4">
           <i class="icon-users"></i>
           <h3>Hosting</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tenetur.</p>
           <button class="btn-primary">Read More</button>
         </div>
 
-        <div>
+        <div class="col-xs-4">
           <i class="icon-glass2"></i>
           <h3>Hosting</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, tenetur.</p>
@@ -78,9 +78,9 @@
         <h2 class="subject-title">Team</h2>
         <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsum iusto, officiis suscipit excepturi impedit et fugiat at vitae nihil placeat!</p>
 
-        <div class="icons-show">
+        <div class="row text-center">
 
-          <div class="person">
+          <div class="col-xs-4">
             <i class="icon-user"></i>
             <h3>Mr.John Doe</h3>
             <h5>Job Title</h5>
@@ -88,7 +88,7 @@
             <button class="btn-primary">Read More</button>
           </div>
 
-          <div class="person">
+          <div class="col-xs-4">
             <i class="icon-user"></i>
             <h3>Mr.John Doe</h3>
             <h5>Job Title</h5>
@@ -96,7 +96,7 @@
             <button class="btn-primary">Read More</button>
           </div>
 
-          <div class="person">
+          <div class="col-xs-4">
             <i class="icon-user"></i>
             <h3>Mr.John Doe</h3>
             <h5>Job Title</h5>
@@ -108,7 +108,7 @@
 
     </section>
 
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery row">
       <h2 class="subject-title">Gallery</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Ipsum iusto, officiis suscipit excepturi impedit et fugiat at vitae nihil placeat!</p>
 
@@ -119,33 +119,33 @@
         <button class="filter btn-primary" data-filter=".category-3">Movies</button>
       </div>
 
-      <div id="Container">
-      	<div class="mix category-1" data-myorder="2">
+      <div id="Container" class="row text-center">
+      	<div class="col-md-4 col-xs-6 mix category-1" data-myorder="2">
       	  <img src="assets/img/sample.png" alt="Categories">
           <p class="text-center">Lorem ipsum dolor.</p>
       	</div>
 
-      	<div class="mix category-2" data-myorder="4">
+      	<div class="col-md-4 col-xs-6 mix category-2" data-myorder="4">
       	  <img src="assets/img/sample.png" alt="Categories">
           <p class="text-center">Lorem ipsum dolor.</p>
       	</div>
 
-      	<div class="mix category-1" data-myorder="1">
+      	<div class="col-md-4 col-xs-6 mix category-1" data-myorder="1">
       	  <img src="assets/img/sample.png" alt="Categories">
           <p class="text-center">Lorem ipsum dolor.</p>
       	</div>
 
-      	<div class="mix category-2" data-myorder="8">
+      	<div class="col-md-4 col-xs-6 mix category-2" data-myorder="8">
       	  <img src="assets/img/sample.png" alt="Categories">
           <p class="text-center">Lorem ipsum dolor.</p>
       	</div>
 
-      	<div class="mix category-3" data-myorder="8">
+      	<div class="col-md-4 col-xs-6 mix category-3" data-myorder="8">
       	  <img src="assets/img/sample.png" alt="Categories">
           <p class="text-center">Lorem ipsum dolor.</p>
       	</div>
 
-      	<div class="mix category-3" data-myorder="8">
+      	<div class="col-md-4 col-xs-6 mix category-3" data-myorder="8">
       	  <img src="assets/img/sample.png" alt="Categories">
           <p class="text-center">Lorem ipsum dolor.</p>
       	</div>
@@ -154,7 +154,7 @@
 
   </div><!-- .container -->
 
-  <footer class="footer text-center">Copyrights &copy; by Ahmed Mahmoud</footer>
+  <footer id="contact" class="footer text-center">Copyrights &copy; by Ahmed Mahmoud</footer>
 
   <script src="assets/js/jquery-2.1.4.min.js"></script>
   <script src="assets/js/responsiveslides.min.js"></script>
